@@ -2,4 +2,9 @@
 
 :root{
     --gradient: linear-gradient(to right, #00AAFF, #8617CF, #FF00C8);
+    --gradient-top: linear-gradient(to bottom, #00AAFF, #8617CF, #FF00C8);
+}
+
+.retangulo{
+    clip-path: polygon(100% 0%, 0 100%, 100% 100%);
 }
