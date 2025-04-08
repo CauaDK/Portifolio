@@ -3,6 +3,8 @@
 :root{
     --gradient: linear-gradient(to right, #00AAFF, #8617CF, #FF00C8);
     --gradient-top: linear-gradient(to bottom, #00AAFF, #8617CF, #FF00C8);
+    --gradient-azul: linear-gradient(to right, #00AAFF, #8617CF);
+    --gradient-rosa: linear-gradient(to right, #8617CF, #FF00C8);
 }
 
 .retangulo{
