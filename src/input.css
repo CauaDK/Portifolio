@@ -7,6 +7,9 @@
     --gradient-rosa: linear-gradient(to right, #8617CF, #FF00C8);
 }
 
-.retangulo{
+.retangulo1{
     clip-path: polygon(100% 0%, 0 100%, 100% 100%);
+}
+.retangulo2{
+    clip-path: polygon(0% 0%, 0 100%, 100% 0);
 }
