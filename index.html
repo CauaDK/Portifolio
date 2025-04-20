@@ -268,30 +268,39 @@
     </head>
     <body class="bg-[#f5f5f5] z-0"><a name="home"></a>
 
-        <nav class="flex flex-col items-center justify-center py-3 w-full bg-[#d1d1d1]/30 gap-5">
-            <div class="w-30">
-                <img src="./src/images/Logo caua.png" alt="">
-           </div>
-            <div class="flex gap-8">
-                <ul class="flex items-center gap-6 font-[poppins] font-normal">
-                </ul>
-                <div class="flex w-12 bg-[#c1c1c1] h-auto rounded-4xl justify-between cursor-pointer">
-                    <div class="flex w-6 h-6 rounded-[50%] items-center justify-center bg-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
-                        </svg>                          
-                    </div>
-                    <div class="flex w-6 h-6 rounded-[50%] items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-                        </svg>                          
+        <nav class="flex items-center justify-between py-3 px-5 w-full bg-[#e5e5e5] gap-2 fixed z-20 xl:py-5 xl:px-15">
+            <div class="font-[poppins] text-lg font-semibold flex gap-2 items-center">
+                <div class="bg-(image:--gradient) bg-clip-text text-transparent text-3xl">
+                    <span><</span><span>></span>
+                </div> 
+                <div class="text-[#252525]">CAUÃ MOHOR PARDINI</div>
+            </div>
+            <div class="xl:hidden" id="menu-btn" onclick="menuButton()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-7 rotate-180">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                </svg> 
+                <div class="absolute hidden flex-col text-center font-[poppins] font-normal w-1/3 right-0 top-0 bg-[#e5e5e5] shadow-lg shadow-[#b1b1b1]" id="dropdown">
+                    <a href="#home" class="hover:bg-(image:--gradient) hover:bg-clip-text hover:text-transparent transition duration-300 py-3 border-b-1 border-white">Inicio</a>
+                    <a href="#sobre" class="hover:bg-(image:--gradient) hover:bg-clip-text hover:text-transparent transition duration-300 py-3 border-b-1 border-white">Sobre</a>
+                    <a href="#projetos" class="hover:bg-(image:--gradient) hover:bg-clip-text hover:text-transparent transition duration-300 py-3 border-b-1 border-white">Projetos</a>
+                    <a href="#contato" class="hover:bg-(image:--gradient) hover:bg-clip-text hover:text-transparent transition duration-300 py-3 border-b-1 border-white">Contato</a>
+                    <div class="py-3 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-7">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                        </svg> 
                     </div>
                 </div>
             </div>
+            <ul class="items-center gap-6 font-[poppins] font-normal hidden xl:flex">
+                <li class="hover:bg-(image:--gradient) hover:bg-clip-text hover:text-transparent transition duration-300"><a href="#home">Inicio</a></li>
+                <li class="hover:bg-(image:--gradient) hover:bg-clip-text hover:text-transparent transition duration-300"><a href="#sobre">Sobre</a></li>
+                <li class="hover:bg-(image:--gradient) hover:bg-clip-text hover:text-transparent transition duration-300"><a href="#projetos">Projetos</a></li>
+                <li class="hover:bg-(image:--gradient) hover:bg-clip-text hover:text-transparent transition duration-300"><a href="#contato">Contato</a></li>
+            </ul>
         </nav>
 
         <header>
-            <div class="py-20 px-10 lg:py-40 lg:px-30">
+            <div class="pt-50 pb-20 px-10 lg:py-40 lg:px-30 lg:pt-70 lg:pb-30">
                 <div class="flex flex-col items-center gap-15 lg:flex-row lg:justify-around">
                     <div class="flex flex-col items-center">
                         <h1 class="bg-(image:--gradient) bg-clip-text max-w-fit text-transparent text-4xl font-[poppins] font-semibold p-2 lg:text-5xl xl:text-6xl">Designer</h1>
@@ -311,8 +320,7 @@
         </header>
 
         <main>
-
-            <section class="py-40 px-5 lg:px-20 xl:px-25">
+            <section class="py-40 px-5 lg:px-20 xl:px-25"><a name="sobre"></a>
                 <p class="font-[poppins] text-2xl font-medium lg:text-3xl">< sobre ></p>
                 <div class="w-2/5 h-0.5 bg-(image:--gradient) mx-5 mt-5"></div>
                 <div class="flex flex-col gap-y-10 mt-15 mb-20 mx-5 md:grid md:grid-cols-2">
@@ -345,8 +353,7 @@
             </section>
 
             <section class="mt-[-25%] z-0 md:mt-[-20%] lg:mt-[-15%] xl:mt-[-10%]">
-                <div class="retangulo1 w-full h-20 bg-[#f0f0f0] lg:h-40"></div>
-                <a name="projetos"></a>
+                <div class="retangulo1 w-full h-20 bg-[#f0f0f0] lg:h-40"></div><a name="projetos"></a>
                 <div class="bg-[#f0f0f0] pt-50 pb-25 px-5 lg:px-20 xl:px-25">
                     <p class="font-[poppins] text-2xl font-medium lg:text-3xl">< projetos ></p>
                     <div class="w-3/5 h-0.5 bg-(image:--gradient) mx-5 mt-5"></div>
@@ -453,7 +460,7 @@
                 <div class="flex justify-center">
                     <p class="text-sm font-[poppins] font-light">Copyright © 2025 Cauã Mohor Pardini</p>
                 </div>
-            </div>
+            </div><a name="contato"></a>
         </footer>
         
         <section class="fixed bottom-0 left-0 bg-[#d1d1d1] px-1.5 py-3 flex flex-col gap-3 z-10 lg:bottom-3 lg:left-3">
@@ -468,11 +475,7 @@
                 </svg>
             </a>
         </section>
-        <a href="#home" class="fixed bottom-0 right-0 bg-[#d1d1d1] p-1.5 z-10 lg:bottom-3 lg:right-3">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-7">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
-            </svg>              
-        </a>
 
+        <script src="./src/script/script.js"></script>
     </body>
 </html>
