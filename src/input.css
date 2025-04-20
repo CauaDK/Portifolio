@@ -13,3 +13,6 @@
 .retangulo2{
     clip-path: polygon(0% 0%, 0 100%, 100% 0);
 }
+.retangulo-fim{
+    clip-path: polygon(50% 75%, 100% 0, 100% 100%, 0% 100%, 0 0);
+}
