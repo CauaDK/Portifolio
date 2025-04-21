@@ -16,3 +16,28 @@
 .retangulo-fim{
     clip-path: polygon(50% 75%, 100% 0, 100% 100%, 0% 100%, 0 0);
 }
+
+#box-text-link{
+    overflow: hidden;
+}
+#depois{
+    bottom: 100%;
+    transition: bottom 0.5s;
+    position: absolute; 
+}
+#text-link, #text-link-fill{
+    transition: 0.5s;
+    z-index: 10;
+}
+
+#box-text-link:hover #depois{
+    bottom: 5%;
+}
+#box-text-link:hover #text-link{
+    color: white;
+    stroke: white;
+}
+#box-text-link:hover #text-link-fill{
+    fill: white;
+}
+
