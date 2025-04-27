@@ -100,3 +100,6 @@ a:hover .circle{
 }
 
 
+.reveal, .reveal-left, .reveal-right{
+    visibility: hidden;
+}

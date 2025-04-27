@@ -64,3 +64,32 @@ function animateCircles() {
 }
 
 animateCircles();
+
+
+
+window.revelar = ScrollReveal({
+    reset: true,
+    mobile: true
+})
+
+revelar.reveal('.reveal-left', {
+    duration: 2000,
+    distance: "20%",
+    origin: "left"
+})
+revelar.reveal('.reveal', {
+    duration: 2000,
+    distance: "30%"
+})
+revelar.reveal('.reveal-delay', {
+    delay: 1000,
+    useDelay: 'once'
+})
+revelar.reveal('.delay-desktop-1', {
+    delay: 500,
+    mobile: false
+})
+revelar.reveal('.delay-desktop-2', {
+    delay: 1000,
+    mobile: false
+})
