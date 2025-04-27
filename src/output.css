@@ -947,6 +947,48 @@ a {
 a:hover .circle {
   opacity: 0.1;
 }
+#title-footer span {
+  position: relative;
+}
+#title-footer span::before {
+  content: "";
+  animation: digito 10s infinite;
+}
+@keyframes digito {
+  0% {
+    opacity: 0;
+  }
+  10%,28% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  0%,33% {
+    content: "e vamos contruir algo incrivel juntos!";
+    color: #00AAFF;
+  }
+  44%,61% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  34%,66% {
+    content: "para transformar suas ideias em realidade!";
+    color: #8617CF;
+  }
+  77%,95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+  67%,100% {
+    content: "e seu proximo projeto começa aqui!";
+    color: #FF00C8;
+  }
+}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
